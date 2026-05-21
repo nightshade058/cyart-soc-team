@@ -1,0 +1,79 @@
+========================================================
+              MEMORY DUMP HASH RECORD
+========================================================
+
+Incident ID        : SOC-2025-002
+Incident Severity  : Critical
+Affected Host      : SERVER-X
+Host IP Address    : 192.168.1.10
+Collected By       : SOC Analyst
+Collection Tool    : Velociraptor
+Collection Date    : 2025-08-18 11:45:00
+Evidence ID        : E-004
+
+--------------------------------------------------------
+                 MEMORY ACQUISITION DETAILS
+--------------------------------------------------------
+
+Memory Dump File   : SERVER-X_MemoryDump.raw
+File Size          : 2.4 GB
+Operating System   : Ubuntu Linux Server
+Acquisition Method : Live Memory Acquisition
+Storage Location   : Secure SOC Evidence Repository
+
+--------------------------------------------------------
+                  HASH VERIFICATION
+--------------------------------------------------------
+
+Hash Algorithm     : SHA256
+
+SHA256 HASH VALUE:
+
+9f2f6fcb5d0a4df2e4b5d5e3e6d90c7a
+3f4b2c8d5a7f8b6c4d3e2f1a5b7c9d0
+
+Hash Status        : VERIFIED
+Integrity Check    : PASSED
+
+--------------------------------------------------------
+                     PURPOSE
+--------------------------------------------------------
+
+The memory dump was collected to preserve volatile
+evidence associated with suspicious shell activity,
+VSFTPD exploitation attempts, unauthorized access
+behavior, and possible malware execution detected
+during investigation of Incident SOC-2025-002.
+
+The evidence will support:
+
+- Malware analysis
+- Persistence detection
+- Shell activity investigation
+- Threat intelligence correlation
+- Forensic reconstruction
+
+--------------------------------------------------------
+               CHAIN OF CUSTODY STATUS
+--------------------------------------------------------
+
+Evidence Preserved : YES
+Evidence Encrypted : YES
+Transfer Logged    : YES
+Access Restricted  : YES
+
+--------------------------------------------------------
+                  INVESTIGATION NOTES
+--------------------------------------------------------
+
+Wazuh SIEM generated multiple Critical alerts related
+to exploitation attempts originating from attacker
+IP address 192.168.1.100.
+
+CrowdSec containment procedures were initiated after
+confirmation of suspicious shell activity and exploit
+behavior targeting the vulnerable VSFTPD service.
+
+========================================================
+ END OF MEMORY DUMP HASH RECORD
+========================================================
